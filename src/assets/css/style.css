@@ -1,0 +1,65 @@
+body {
+  background-color: #F8F8F8 !important;
+}
+.container {
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+}
+.btn-primary {
+  background-color: #02ABE3 !important;
+  border-color: #02ABE3 !important;
+}
+.btn-custom-round {
+  border-radius: 25px;
+}
+.custom-black {
+  font-family: 'SF Pro Text', 'Lato', 'Roboto', sans-serif;
+  color: #363636;
+  font-size: 12pt;
+}
+a, a:hover, a:focus, a:visited {
+  color: #02ABE3 !important;
+  text-decoration: underline;
+  font-size: 12pt;
+}
+
+.grey {
+  color: #707070 !important
+}
+
+.cut-text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 62%;
+  white-space: nowrap;
+}
+
+/* Step 2 */
+.btn-outline-primary {
+  border: 1px solid #02ABE3 !important;
+  color: #02ABE3 !important;
+  border-radius: 4px !important;
+}
+
+.btn-outline-primary.active, .btn-outline-primary:active {
+  border: 1px solid #02ABE3 !important;
+  background-color: #02ABE3 !important;
+  color: #FFFFFF !important;
+  border-radius: 4px !important;
+}
+
+/* Step 3 */
+.circle-blue {
+  border: 1px solid #02ABE3;
+  margin: 0px 30%;
+  padding: 25px 30px;
+  border-radius: 75px;
+  width: 147px;
+  height: 147px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: #fff;
+  border-color: #02ABE3 !important;
+  background-color: #02ABE3 !important;
+}
