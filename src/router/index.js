@@ -6,17 +6,17 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'step1',
+    name: 'Step1',
     component: () => import(/* webpackChunkName: "step1" */ '@/views/Step1.vue')
   },
   {
     path: '/step2',
-    name: 'step2',
+    name: 'Step2',
     component: () => import(/* webpackChunkName: "about" */ '@/views/Step2.vue')
   },
   {
     path: '/step3',
-    name: 'step3',
+    name: 'Step3',
     component: () => import(/* webpackChunkName: "about" */ '@/views/Step3.vue')
   }
 ]

@@ -1,6 +1,11 @@
 body {
   background-color: #F8F8F8 !important;
 }
+
+.dx-error-field {
+  color: rgb(211, 39, 39);
+}
+
 .container {
   padding-left: 16px !important;
   padding-right: 16px !important;
