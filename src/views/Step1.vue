@@ -30,10 +30,6 @@
               <label>Email</label>
             </template>
           </custom-input>
-          <!-- <div class="form-group">
-            <label>Email</label>
-            <input type="text" class="form-control" placeholder="Your email" />
-          </div> -->
         </div>
         <div class="col-md-12 center">
           <custom-input
@@ -75,7 +71,6 @@
 
 <script>
 import Vue from 'vue'
-// import { mask } from 'vue-the-mask'
 import CustomInput from '@/components/Form/CustomInput.vue'
 import VeeValidate from 'vee-validate'
 import { isIqualTo } from '@/utils/validator'
@@ -105,8 +100,16 @@ export default {
     nextStep () {
       this.$validator.validateAll('vvStep1').then((result) => {
         if (result) {
-          // console.log('asdf')
-          this.$router.push({ name: 'Step2' })
+          let step1 = {
+            name: this.name,
+            email: this.email,
+            password: this.password
+          }
+          global.instanceApp.$store.dispatch('setStep1', {
+            step: step1
+          }).then(() => {
+            this.$router.push({ name: 'Step2' })
+          })
         }
       })
     }

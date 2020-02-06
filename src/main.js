@@ -8,7 +8,7 @@ import '@fortawesome/fontawesome-free/js/all.js'
 
 Vue.config.productionTip = process.env.NODE_ENV === 'production'
 
-new Vue({
+global.instanceApp = new Vue({
   router,
   store,
   render: h => h(App)
